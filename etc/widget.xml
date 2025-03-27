@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magecan, Inc. All rights reserved.
+ */
+-->
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Widget/etc/widget.xsd">
+    <widget id="brand_slider" class="Magecan\ShopByBrand\Block\BrandSlider" >
+        <label translate="true">Brand Slider</label>
+        <description>Displays a slider with all product brands</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" required="true" sort_order="10">
+                <label translate="true">Title</label>
+            </parameter>
+            <parameter name="limit" xsi:type="text" required="false" sort_order="20">
+                <label translate="true">Number of Brands</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
