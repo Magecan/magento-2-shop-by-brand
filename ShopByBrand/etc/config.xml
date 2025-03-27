@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magecan, Inc. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <shop_by_brand>
+            <brand_carousel>
+                <infinite>1</infinite>
+                <autoplay>0</autoplay>
+                <autoplay_speed>3000</autoplay_speed>
+                <arrows>1</arrows>
+                <dots>0</dots>
+            </brand_carousel>
+        </shop_by_brand>
+    </default>
+</config>
