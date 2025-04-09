@@ -12,6 +12,9 @@
             <resource>Magecan_ShopByBrand::shop_by_brand</resource>
             <group id="brand_carousel" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Brand Carousel</label>
+                <field id="carousel_title" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Carousel Title</label>
+                </field>  
                 <field id="infinite" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Infinite Loop</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -23,7 +26,7 @@
                 <field id="autoplay_speed" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Autoplay Speed</label>
                     <validate>validate-number validate-greater-than-zero</validate>
-                </field>  
+                </field>
                 <field id="arrows" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Show Arrows</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
