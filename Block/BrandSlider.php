@@ -43,6 +43,13 @@ class BrandSlider extends Template implements BlockInterface
             )
         );
         
+        $this->setCarouselTitle(
+            $this->_scopeConfig->getValue(
+                    'shop_by_brand/brand_carousel/carousel_title',
+                    ScopeInterface::SCOPE_STORE
+            )
+        );
+        
         $this->setInfinite(
             $this->_scopeConfig->isSetFlag(
                     'shop_by_brand/brand_carousel/infinite',
@@ -81,10 +88,9 @@ class BrandSlider extends Template implements BlockInterface
 
     public function getBrandOptions()
     {
-        $attribute = $this->eavConfig->getAttribute('catalog_product', 'brand');
+        $attribute = $this->eavConfig->getAttribute('catalog_product', 'tire_brand');
 
-        if (
-            !$attribute ||
+        if (!$attribute ||
             !$attribute->getId() ||
             $attribute->getFrontendInput() !== 'select'
         ) {
