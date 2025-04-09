@@ -5,6 +5,7 @@
 $brands = $block->getBrandOptions();
 
 $enable = $block->getEnable();
+$carouselTitle = $block->getCarouselTitle();
 $infinite = $block->getInfinite();
 $autoplay = $block->getAutoplay();
 $autoplaySpeed = $block->getAutoplaySpeed();
@@ -14,6 +15,7 @@ $dots = $block->getDots();
 
 <?php if (!empty($brands)): ?>
 <div class="brand-slider">
+	<h2><?= $carouselTitle ?></h2>
     <div class="brand-slider-container">
         <div class="brand-slider-wrapper">
             <?php foreach ($brands as $brand): ?>
