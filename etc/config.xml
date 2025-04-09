@@ -12,8 +12,8 @@
                 <infinite>1</infinite>
                 <autoplay>0</autoplay>
                 <autoplay_speed>3000</autoplay_speed>
-                <arrows>1</arrows>
-                <dots>0</dots>
+                <arrows>0</arrows>
+                <dots>1</dots>
             </brand_carousel>
         </shop_by_brand>
     </default>
