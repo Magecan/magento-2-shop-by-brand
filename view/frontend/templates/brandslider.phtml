@@ -19,14 +19,16 @@ $dots = $block->getDots();
             <?php foreach ($brands as $brand): ?>
                 <li class="brand-slide">
                     <a href="brand/index/view?brand=<?= $brand['label'] ?>" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none;">
-                        <h3><?= $brand['label'] ?></h3>
                         <img src="<?= $brand['image'] ?>">
+                        <h3><?= $brand['label'] ?></h3>
                     </a>
                 </li>
             <?php endforeach; ?>
         </div>
     </div>
 </div>
+<?php else: ?>
+    <p>No brands available.</p>
 <?php endif; ?>
 
 <script>
