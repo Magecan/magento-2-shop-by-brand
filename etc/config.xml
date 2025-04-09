@@ -9,6 +9,7 @@
     <default>
         <shop_by_brand>
             <brand_carousel>
+                <carousel_title>Shop by Brand</carousel_title>
                 <infinite>1</infinite>
                 <autoplay>0</autoplay>
                 <autoplay_speed>3000</autoplay_speed>
