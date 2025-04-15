@@ -46,11 +46,16 @@ class BrandProductList extends ListProduct
     {
         $brandId = $this->registry->registry('current_brand_id');
 
+        $pageSize = (int) $this->getRequest()->getParam('limit', 12); // Default to 12 per page
+        $currentPage = (int) $this->getRequest()->getParam('p', 1);   // Current page
+
         $collection = $this->productCollectionFactory->create();
         $collection->addAttributeToSelect('*')
-            ->addAttributeToFilter('brand', $brandId)
+            ->addAttributeToFilter('tire_brand', $brandId)
             ->addAttributeToFilter('visibility', ['neq' => 1])
-            ->addAttributeToFilter('status', 1);
+            ->addAttributeToFilter('status', 1)
+            ->setPageSize($pageSize)
+            ->setCurPage($currentPage);
 
         $this->_productCollection = $collection;
 
